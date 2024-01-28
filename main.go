@@ -16,14 +16,14 @@ func main() {
 	// Ottieni la directory di backup dalla variabile d'ambiente
 	backupDirectory := os.Getenv("WSL_BACKUP_DIR")
 	if backupDirectory == "" {
-		fmt.Println("Environment variable WSL_BACKUP_DIR is not set.")
+		beeep.Alert("WSL Snappy Alert", fmt.Sprintf("Environment variable WSL_BACKUP_DIR is not set."), "")
 		os.Exit(1)
 	}
 
 	// Ottieni la lista delle distribuzioni da una variabile d'ambiente
 	distributions := os.Getenv("WSL_DISTRIBUTIONS")
 	if distributions == "" {
-		fmt.Println("Environment variable WSL_DISTRIBUTIONS is not set.")
+		beeep.Alert("WSL Snappy Alert", fmt.Sprintf("Environment variable WSL_DISTRIBUTIONS is not set."), "")
 		os.Exit(1)
 	}
 	distributionList := strings.Split(distributions, ",")
