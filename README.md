@@ -2,7 +2,7 @@
 
 ![Version](https://img.shields.io/badge/version-1.0.0-green.svg)
 
-WSL Snappy Backup is a utility tool for backing up Windows Subsystem for Linux (WSL) distributions. It supports both sequential and parallel backup modes, providing flexibility and efficiency.
+WSL Snappy is a utility tool for backing up Windows Subsystem for Linux (WSL) distributions. It supports both sequential and parallel backup modes, providing flexibility and efficiency.
 
 ## Features
 
@@ -27,11 +27,9 @@ Before you start using WSL Snappy Backup, make sure you have:
     
 3. Compile the program:
     
-    bash
-    
-
-1. `GOOS=windows GOARCH=amd64 go build -ldflags="-H windowsgui" -o bin/WSLSnappy.exe cmd/main.go`
-    
+```bash
+GOOS=windows GOARCH=amd64 go build -ldflags="-H windowsgui" -o bin/wslSnappy.exe cmd/main.go
+``` 
 
 ## Configuration
 
@@ -43,8 +41,7 @@ Set the following environment variables according to your system setup:
 You can set these variables using the Windows Command Prompt:
 
 ```bash
-
-`setx WSL_BACKUP_DIR "C:\path\to\your\backup\directory" setx WSL_DISTRIBUTIONS "Ubuntu,Debian"`
+setx WSL_BACKUP_DIR "C:\path\to\your\backup\directory" setx WSL_DISTRIBUTIONS "Ubuntu,Debian"
 ```
 
 ## Usage
@@ -54,18 +51,13 @@ Run the compiled executable from the command line:
 - To perform a sequential backup:
     
 ```bash
-    
-
-- `.\bin\WSLSnappy.exe`
+.\bin\wslSnappy.exe
 ```
 
 - To perform backups in parallel (rocket mode):
     
 ```bash
-    
-
-- `.\bin\WSLSnappy.exe --rocket`
-    
+.\bin\wslSnappy.exe --rocket
 ```
 
 The program will start the backup process based on your configuration and display the time taken to complete the backups.
