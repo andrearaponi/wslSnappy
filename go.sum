@@ -1,3 +1,5 @@
+github.com/akavel/rsrc v0.10.2 h1:Zxm8V5eI1hW4gGaYsJQUhxpjkENuG91ki8B4zCrvEsw=
+github.com/akavel/rsrc v0.10.2/go.mod h1:uLoCtb9J+EyAqh+26kdrTgmzRBFPGOolLWKpdxkKq+c=
 github.com/gen2brain/beeep v0.0.0-20240112042604-c7bb2cd88fea h1:oWUHxzaBvwkRWiINbBOY39XIF+n9b4RJEPHdQ8waJUo=
 github.com/gen2brain/beeep v0.0.0-20240112042604-c7bb2cd88fea/go.mod h1:0W7dI87PvXJ1Sjs0QPvWXKcQmNERY77e8l7GFhZB/s4=
 github.com/go-toast/toast v0.0.0-20190211030409-01e6764cf0a4 h1:qZNfIGkIANxGv/OqtnntR4DfOY2+BgwR60cAcu/i3SE=
